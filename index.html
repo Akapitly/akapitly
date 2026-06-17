@@ -43,6 +43,8 @@
   .bar .spacer{flex:1}
   .bar .saved{font-size:11.5px;color:var(--muted);letter-spacing:.03em}
   .bar .saved b{color:var(--ok);font-weight:600}
+  .bar .coffee-link{align-self:center;display:inline-flex;line-height:0}
+  .bar .coffee-link img{display:block;border:0}
 
   main{display:grid;grid-template-columns:400px 1fr;height:calc(100% - 59px)}
   @media (max-width:980px){main{grid-template-columns:1fr;height:auto}}
@@ -231,6 +233,7 @@
   <button class="ghost" id="helpBtn" title="Jak pracować z programem">Pomoc</button>
   <button class="ghost" id="infoBtn" title="Prywatność, zasady, reguły i Detoks AI">Info</button>
   <button class="ghost" id="contactBtn" title="Napisz do nas">Kontakt</button>
+  <a class="coffee-link" id="coffeeBtn" href="https://buycoffee.to/akapitly" target="_blank" rel="noopener" title="Postaw mi kawę — wesprzyj rozwój Akapitly"><img src="https://buycoffee.to/static/img/share/share-button-white.png" width="146" height="38" alt="Postaw kawę dla Akapitly w buycoffee.to"></a>
   <span class="saved" id="savedmark"></span>
 </header>
 
