@@ -80,7 +80,7 @@
   #mobileGate .mg-legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:11.5px;color:var(--muted);margin-top:8px}
   #mobileGate .mg-legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;vertical-align:-1px}
   #mobileGate .mg-row button.on{background:var(--prussian);color:#fff;border-color:transparent}
-  #mobileGate .mg-prev{margin:10px -22px 0;background:var(--paper);color:var(--ink);padding:20px 18px;font-family:"Times New Roman","Tinos",Times,serif;font-size:12px;line-height:1.55;box-shadow:0 1px 4px rgba(0,0,0,.14)}
+  #mobileGate .mg-prev{margin:10px -22px 0;background:var(--paper);color:var(--ink);padding:20px 18px;font-family:"Times New Roman","Tinos",Times,serif;font-size:12px;line-height:1.55;box-shadow:0 1px 4px rgba(0,0,0,.14);max-height:55vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
   #mobileGate .mg-prev.p-ksiazka{font-size:13.5px;line-height:1.3;padding:22px 26px}
   #mobileGate .mg-prev.p-ksiazka p{text-indent:.85em}
   #mobileGate .mg-prev.p-ebook{font-size:13px;line-height:1.5}
@@ -321,6 +321,7 @@ try{if(localStorage.getItem('akapitly_theme')!=='dark')document.documentElement.
     <button class="ghost mg-btn" id="mgShareBtn2">Wyślij sobie link na komputer</button>
     <p class="mg-sub" id="mgShareHint2" hidden style="color:var(--danger)">Link skopiowany — wklej go w mailu lub komunikatorze.</p>
     <p class="mg-sub" style="text-align:center;margin-top:18px">Kontakt: <a href="mailto:info@akapitly.pl" style="color:var(--prussian-2)">info@akapitly.pl</a></p>
+    <p style="text-align:center;margin:14px 0 0"><a href="https://buycoffee.to/akapitly" target="_blank" rel="noopener" title="Postaw mi kawę — wesprzyj rozwój Akapitly"><img src="https://buycoffee.to/static/img/share/share-button-white.png" width="146" height="38" alt="Postaw kawę dla Akapitly w buycoffee.to" style="display:inline-block;border:0"></a></p>
   </div>
 </div>
 <header class="bar">
