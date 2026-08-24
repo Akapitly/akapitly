@@ -2591,7 +2591,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
     document.getElementById("mgToStats").addEventListener("click", ()=>{
       const el = document.getElementById("mgStats");
-      if(el.scrollIntoView) el.scrollIntoView({ behavior:"smooth", block:"start" });
+      const gate = document.getElementById("mobileGate");
+      const sc = (gate && gate.scrollHeight > gate.clientHeight) ? gate : (document.scrollingElement || document.documentElement);
+      const top = el.getBoundingClientRect().top - ((sc === gate) ? gate.getBoundingClientRect().top : 0) + sc.scrollTop - 8;
+      try{ sc.scrollTo({ top: top, behavior: "smooth" }); }
+      catch(e){ sc.scrollTop = top; }
     });
     document.getElementById("mgHeader").addEventListener("change", mgRefresh);
     document.getElementById("mgSampleBtn").addEventListener("click", ()=>{ document.getElementById("mgText").value = MG_SAMPLE; mgRefresh(); });
